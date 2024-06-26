@@ -3,8 +3,8 @@ El Root contiene la lógica de Single-SPA del sistema de gestión de dependencia
 
 ## Especificaciones Técnicas
 ### Tecnologías Implementadas y Versiones
-* [Angular](https://angular.dev)
-* [Node](https://nodejs.org/en/)
+* [Angular](https://angular.dev) 12.2.18
+* [Node](https://nodejs.org/en/) 14.15.0
 
 ### Variables de Entorno
 ```shell
