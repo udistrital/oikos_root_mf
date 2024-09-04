@@ -17,9 +17,18 @@
 
   -->
   <main id="container">
-    <route default>
-      <application name="@udistrital/core-mf" props="environment"></application>
+    <route path="registro">
+      <application name="@udistrital/registro-gestion" props="environment"></application>
+    </route>
+    <route path="gestion">
+      <application name="@udistrital/registro-gestion" props="environment"></application>
+    </route>
+    <route path="mapeo">
+      <application name="@udistrital/mapeo" props="environment"></application>
     </route>
   </main>
+  <div id="core">
+    <application name="@udistrital/core-mf" props="environment"></application>
+  </div>
   
 </single-spa-router>
