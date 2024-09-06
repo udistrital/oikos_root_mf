@@ -101,7 +101,7 @@ steps:
   - name: publish_s3_release
     image: plugins/s3
     settings:
-      bucket: sga-cliente-root
+      bucket: oikos-cliente-root
       access_key:
         from_secret: aws_access_key_id
       secret_key:
