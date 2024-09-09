@@ -32,18 +32,16 @@ module.exports = (webpackConfigEnv, argv) => {
         isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
       }),
       new CopyWebpackPlugin({
-        patterns: [
-          { from: 'src/assets/i18n', to: 'assets/i18n' }
-        ]
-      })
+        patterns: [{ from: "src/assets/i18n", to: "assets/i18n" }],
+      }),
     ],
     devServer: {
       static: {
-        directory: path.join(__dirname, 'dist'),
+        directory: path.join(__dirname, "dist"),
       },
       compress: true,
       port: 4200,
       historyApiFallback: true,
-    }
+    },
   });
 };
