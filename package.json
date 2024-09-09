@@ -21,7 +21,6 @@
     "@babel/preset-typescript": "^7.23.3",
     "@babel/runtime": "^7.23.3",
     "concurrently": "^6.2.1",
-    "copy-webpack-plugin": "^12.0.2",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -40,7 +39,8 @@
     "webpack-cli": "^4.10.0",
     "webpack-config-single-spa-ts": "^4.0.0",
     "webpack-dev-server": "^4.0.0",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "copy-webpack-plugin": "^12.0.2"
   },
   "dependencies": {
     "@types/jest": "^27.0.1",
