@@ -55,18 +55,31 @@
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@udistrital/root-config": "//localhost:4200/udistrital-root-config.js",
-        "@udistrital/core-mf": "https://pruebascoreclientes.portaloas.udistrital.edu.co/main.js",
-        "@udistrital/registro-gestion": "//localhost:4202/main.js",
-        "@udistrital/mapeo": "//localhost:4203/main.js"
+      <% if (isProd) { %>
+        <% const { environment } = require('./environments/environment.production.ts'); %>
+        <% const parcelsKeys = Object.keys(environment.parcels); %>
+        <% for (let i = 0; i < parcelsKeys.length; i++) { %>
+          "<%= parcelsKeys[i] %>": "<%= environment.parcels[parcelsKeys[i]] %>"<%= i < parcelsKeys.length - 1 ? ',' : '' %>
+        <% } %>
+      <% } else if (isDev) {%>
+        <% const { environment } = require('./environments/environment.development.ts'); %>
+        <% const parcelsKeys = Object.keys(environment.parcels); %>
+        <% for (let i = 0; i < parcelsKeys.length; i++) { %>
+          "<%= parcelsKeys[i] %>": "<%= environment.parcels[parcelsKeys[i]] %>"<%= i < parcelsKeys.length - 1 ? ',' : '' %>
+        <% } %>
+      <% } else {%>
+        <% const { environment } = require('./environments/environment.ts'); %>
+        <% const parcelsKeys = Object.keys(environment.parcels); %>
+        <% for (let i = 0; i < parcelsKeys.length; i++) { %>
+          "<%= parcelsKeys[i] %>": "<%= environment.parcels[parcelsKeys[i]] %>"<%= i < parcelsKeys.length - 1 ? ',' : '' %>
+        <% } %>
+      <% } %>
       }
     }
   </script>
-  <% } %>
 
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded

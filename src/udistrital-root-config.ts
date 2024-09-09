@@ -5,13 +5,23 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
-import { environment } from "./environments/environment";
 import "./assets/styles/index.css";
 
+let environment;
+
+declare var isProd: boolean | undefined;
+declare var isDev: boolean | undefined;
+
+if (isProd) {
+  environment = require("./environments/environment.production");
+} else if (isDev) {
+  environment = require("./environments/environment.development");
+} else {
+  environment = require("./environments/environment");
+}
+
 const data = {
-  props: {
-    environment: environment,
-  },
+  props: environment,
   loaders: {},
 };
 
