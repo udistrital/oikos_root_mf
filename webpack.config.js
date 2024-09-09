@@ -14,7 +14,7 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
     disableHtmlGeneration: true,
   });
-  console.log("PATH ", path.resolve(__dirname, "src/assets/i18n"));
+  console.log("PATH ", path.resolve(__dirname, "assets/i18n"));
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
     context: path.resolve(__dirname),
@@ -38,7 +38,7 @@ module.exports = (webpackConfigEnv, argv) => {
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, "src/assets/i18n"),
+            from: path.resolve(__dirname, "assets/i18n"),
             to: "assets/i18n",
           },
         ],
