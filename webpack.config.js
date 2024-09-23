@@ -15,6 +15,7 @@ module.exports = (webpackConfigEnv, argv) => {
     disableHtmlGeneration: true,
   });
   console.log("PATH ", path.resolve(__dirname, "assets/i18n"));
+  console.log("WEBPACK ", webpackConfigEnv);
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
     context: path.resolve(__dirname),

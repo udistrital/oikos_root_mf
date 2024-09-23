@@ -21,8 +21,9 @@ export const environment = {
   },
   parcels: {
     "@udistrital/root-config": "//localhost:4200/udistrital-root-config.js",
-    "@udistrital/core-mf": "//localhost:4201/main.js",
-    "@udistrital/registro-gestion": "//localhost:4205/main.js",
+    "@udistrital/core-mf":
+      "https://pruebascoreclientes.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/registro-gestion": "//localhost:4202/main.js",
     "@udistrital/mapeo": "//localhost:4203/main.js",
   },
 };
