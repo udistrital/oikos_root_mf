@@ -24,7 +24,7 @@ export const environment = {
       "https://pruebascoreclientes.portaloas.udistrital.edu.co/main.js",
     "@udistrital/root-config":
       "https://pruebasoikosmicroclientes.portaloas.udistrital.edu.co/udistrital-root-config.js",
-    "@udistrital/mapeo":
+    "@udistrital/mapeo-dependencias-mf":
       "https://pruebasoikosmapeodependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/registro-gestion":
       "https://pruebasoikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
