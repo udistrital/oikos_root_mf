@@ -14,11 +14,9 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
     disableHtmlGeneration: true,
   });
-  console.log("PATH ", path.resolve(__dirname, "assets/i18n"));
-  console.log("WEBPACK ", webpackConfigEnv);
+
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
-    context: path.resolve(__dirname),
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
@@ -38,20 +36,17 @@ module.exports = (webpackConfigEnv, argv) => {
       }),
       new CopyWebpackPlugin({
         patterns: [
-          {
-            from: path.resolve(__dirname, "src/assets/i18n"),
-            to: "assets/i18n",
-          },
-        ],
-      }),
+          { from: 'src/assets/i18n', to: 'assets/i18n' }
+        ]
+      })
     ],
     devServer: {
       static: {
-        directory: path.join(__dirname, "dist"),
+        directory: path.join(__dirname, 'dist'),
       },
       compress: true,
       port: 4200,
       historyApiFallback: true,
-    },
+    }
   });
 };
