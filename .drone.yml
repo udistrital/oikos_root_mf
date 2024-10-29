@@ -5,39 +5,39 @@ steps:
   - name: check_readme
     image: jjvargass/qa_develoment:latest
     commands:
-    - python /app/check_readme.py
+      - python /app/check_readme.py
     when:
       branch:
-      - develop
-      - feature/*
-      - release/*
+        - develop
+        - feature/*
+        - release/*
       event:
-      - pus
+        - pus
 
   - name: check_branch
     image: jjvargass/qa_develoment:latest
     commands:
-    - python /app/check_branch.py -H ${DRONE_GIT_HTTP_URL}
+      - python /app/check_branch.py -H ${DRONE_GIT_HTTP_URL}
     when:
       branch:
-      - develop
-      - feature/*
-      - release/*
+        - develop
+        - feature/*
+        - release/*
       event:
-      - pus
+        - pus
 
   - name: check_commits
     image: jjvargass/qa_develoment:latest
     failure: ignore
     commands:
-    - python /app/check_commits.py
+      - python /app/check_commits.py
     when:
       branch:
-      - develop
-      - feature/*
-      - release/*
+        - develop
+        - feature/*
+        - release/*
       event:
-      - push
+        - push
 
   # - name: prueba_unitarias
   #   image: node:12.22.7
@@ -106,11 +106,11 @@ steps:
         from_secret: SONAR_TOKEN
     when:
       branch:
-      - develop
-      - feature/*
-      - release/*
+        - develop
+        - feature/*
+        - release/*
       event:
-      - push
+        - push
 
   - name: publish_s3_release
     image: plugins/s3
