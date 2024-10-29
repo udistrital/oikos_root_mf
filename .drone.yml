@@ -12,7 +12,7 @@ steps:
         - feature/*
         - release/*
       event:
-        - pus
+        - push
 
   - name: check_branch
     image: jjvargass/qa_develoment:latest
@@ -24,7 +24,7 @@ steps:
         - feature/*
         - release/*
       event:
-        - pus
+        - push
 
   - name: check_commits
     image: jjvargass/qa_develoment:latest
