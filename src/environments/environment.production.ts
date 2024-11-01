@@ -9,7 +9,7 @@ export const environment = {
   TOKEN: {
     AUTORIZATION_URL:
       "https://autenticacion.portaloas.udistrital.edu.co/oauth2/authorize",
-    CLIENTE_ID: "e36v1MPQk2jbz9KM4SmKhk8Cyw0a",
+    CLIENTE_ID: "iz1qclXfXrhzsfKuQX3SkDB1tHka",
     RESPONSE_TYPE: "id_token token",
     SCOPE: "openid email role documento",
     REDIRECT_URL: "https://oikosmicroclientes.portaloas.udistrital.edu.co",
