@@ -28,5 +28,6 @@ export const environment = {
       "https://pruebasoikosmapeodependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/registro-gestion":
       "https://pruebasoikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/espacios-fisicos-mf": "//localhost:4204/main.js",
   },
 };

@@ -25,5 +25,6 @@ export const environment = {
       "https://pruebascoreclientes.portaloas.udistrital.edu.co/main.js",
     "@udistrital/registro-gestion": "//localhost:4202/main.js",
     "@udistrital/mapeo-dependencias-mf": "//localhost:4203/main.js",
+    "@udistrital/espacios-fisicos-mf": "//localhost:4204/main.js",
   },
 };
