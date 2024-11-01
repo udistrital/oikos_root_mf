@@ -116,7 +116,7 @@ steps:
   - name: publish_s3_master
     image: plugins/s3
     settings:
-      bucket: oikos_prod_cliente_root
+      bucket: oikos-prod-cliente-root
       access_key:
         from_secret: aws_access_key_id
       secret_key:
