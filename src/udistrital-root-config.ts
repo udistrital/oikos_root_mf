@@ -33,6 +33,14 @@ const applications = constructApplications({
 });
 const layoutEngine = constructLayoutEngine({ routes, applications });
 
+function enviarDatos(info) {
+  console.log("Hace el guardado en local storage")
+  localStorage.setItem('sharedData', JSON.stringify(info));
+}
+enviarDatos({ mensaje: 'Hola desde el ROOT de OIKOS' });
+
+
+
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
