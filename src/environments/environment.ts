@@ -1,4 +1,5 @@
 export const environment = {
+  sistema: 'OIKOS',
   production: false,
   entorno: "test",
   autenticacion: true,
@@ -26,5 +27,6 @@ export const environment = {
     "@udistrital/registro-gestion": "//localhost:4202/main.js",
     "@udistrital/mapeo-dependencias-mf": "//localhost:4203/main.js",
     "@udistrital/espacios-fisicos-mf": "//localhost:4204/main.js",
+    "@udistrital/auditoria-mf": "//localhost:4205/main.js",
   },
 };
