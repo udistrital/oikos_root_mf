@@ -1,4 +1,4 @@
-import { registerApplication, start } from "single-spa";
+import { registerApplication, start, mountRootParcel } from "single-spa";
 import {
   constructApplications,
   constructRoutes,
@@ -36,3 +36,9 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
+window.addEventListener('appMounted', (event: Event) => {
+  const customEvent = event as CustomEvent;
+  if (customEvent.detail.appName === '@udistrital/auditoria-mf') {
+    window.dispatchEvent(new CustomEvent('infoRoot', { detail: "Prueba desde Root con custom Events" }));
+  }
+});
