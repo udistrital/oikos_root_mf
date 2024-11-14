@@ -19,8 +19,13 @@ if (isProd) {
   environment = require("./environments/environment");
 }
 
+const customProps ={
+  'env': environment,
+  'info': "Sistema oikos",
+}
+
 const data = {
-  props: environment,
+  props: customProps,
   loaders: {},
 };
 
