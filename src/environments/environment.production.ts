@@ -28,5 +28,7 @@ export const environment = {
       "https://pruebasoikosmapeodependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/registro-gestion":
       "https://pruebasoikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/auditoria-mf": 
+      "//localhost:4205/main.js",
   },
 };
