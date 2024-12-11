@@ -30,5 +30,7 @@ export const environment = {
     "@udistrital/registro-gestion":
       "https://oikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/espacios-fisicos-mf": "//localhost:4204/main.js",
+    "@udistrital/auditoria-mf": 
+      "//localhost:4205/main.js",
   },
 };
