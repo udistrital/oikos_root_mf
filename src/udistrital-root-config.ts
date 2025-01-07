@@ -36,3 +36,13 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
+
+window.addEventListener('clienteAuditoria', (event: Event) => {
+  const customEvent = event as CustomEvent;
+  if (customEvent.detail.appName === '@udistrital/auditoria-mf') {
+    const rootClienteId = data.props.environment.TOKEN.CLIENTE_ID;
+    window.dispatchEvent(
+      new CustomEvent('infoRoot', { detail: { clienteId: rootClienteId, appName: '@udistrital/auditoria-mf' } })
+    );
+  }
+});
