@@ -32,7 +32,7 @@ export const environment = {
       "https://pruebasoikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/espacios-fisicos-mf":
       "https://pruebasoikosespaciosfisicos.portaloas.udistrital.edu.co/main.js",
-    "@udistrital/auditoria-mf": 
-      "//localhost:4205/main.js",
+    "@udistrital/auditoria-mf":
+      "https://pruebasauditoria.portaloas.udistrital.edu.co/main.js",
   },
 };
