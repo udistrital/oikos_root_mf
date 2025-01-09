@@ -31,7 +31,7 @@ export const environment = {
       "https://oikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/espacios-fisicos-mf":
       "https://oikosespaciosfisicos.portaloas.udistrital.edu.co/main.js",
-    "@udistrital/auditoria-mf": 
+    "@udistrital/auditoria-mf":
       "https://auditoria.portaloas.udistrital.edu.co/main.js",
   },
 };
