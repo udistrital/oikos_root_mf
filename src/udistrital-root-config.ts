@@ -24,6 +24,7 @@ const data = {
   loaders: {},
 };
 
+// test
 const routes = constructRoutes(microfrontendLayout, data);
 const applications = constructApplications({
   routes,
