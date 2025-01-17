@@ -37,6 +37,7 @@ applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
 
+
 window.addEventListener("clienteAuditoria", (event: Event) => {
   const customEvent = event as CustomEvent;
   if (customEvent.detail.appName === "@udistrital/auditoria-mf") {
