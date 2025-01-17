@@ -29,6 +29,9 @@ export const environment = {
       "https://oikosmapeodependencias.portaloas.udistrital.edu.co/main.js",
     "@udistrital/registro-gestion":
       "https://oikosgestiondependencias.portaloas.udistrital.edu.co/main.js",
-    "@udistrital/espacios-fisicos-mf": "//localhost:4204/main.js",
+    "@udistrital/espacios-fisicos-mf":
+      "https://oikosespaciosfisicos.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/auditoria-mf":
+      "https://auditoria.portaloas.udistrital.edu.co/main.js",
   },
 };
