@@ -24,6 +24,7 @@ const data = {
   loaders: {},
 };
 
+// test
 const routes = constructRoutes(microfrontendLayout, data);
 const applications = constructApplications({
   routes,
@@ -36,7 +37,6 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
-
 
 window.addEventListener("clienteAuditoria", (event: Event) => {
   const customEvent = event as CustomEvent;
