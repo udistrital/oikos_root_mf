@@ -57,7 +57,7 @@ steps:
         from_secret: aws_secret_access_key
       region: us-east-1
       source: dist/**/*
-      target: /core/${DRONE_REPO_NAME}
+      target: /oikos/${DRONE_REPO_NAME}
       strip_prefix: dist/
     when:
       branch:
@@ -76,7 +76,7 @@ steps:
         from_secret: aws_secret_access_key
       region: us-east-1
       source: dist/**/*
-      target: /core/${DRONE_REPO_NAME}
+      target: /oikos/${DRONE_REPO_NAME}
       strip_prefix: dist/
     when:
       branch:
