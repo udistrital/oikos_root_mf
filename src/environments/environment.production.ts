@@ -33,5 +33,7 @@ export const environment = {
       "https://oikosespaciosfisicos.portaloas.udistrital.edu.co/main.js",
     "@udistrital/auditoria-mf":
       "https://auditoria.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/parqueadero-mf":
+      "https://parqueadero.portaloas.udistrital.edu.co/main.js",
   },
 };

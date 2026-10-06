@@ -34,5 +34,7 @@ export const environment = {
       "https://pruebasoikosespaciosfisicos.portaloas.udistrital.edu.co/main.js",
     "@udistrital/auditoria-mf":
       "https://pruebasauditoria.portaloas.udistrital.edu.co/main.js",
+    "@udistrital/parqueadero-mf":
+      "https://pruebasparqueadero.portaloas.udistrital.edu.co/main.js",
   },
 };
